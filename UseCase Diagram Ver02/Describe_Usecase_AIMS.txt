@@ -1,0 +1,28 @@
+1. "Place order" use case: Main Flow
+    * BASIC FLOW:
+	+ View the cart for checking product's information
+	+ Update cart
+	+ Request to place order from customer
+	+ Update delivery information (delivery instructions)
+	+ Confirm order for customer
+	+ Confirm invoice
+	+ Pay for the order
+    * ALTERNATIVE FLOW:
+	+ Exception: Invalid shipping information; Invalid credit card information;
+Not enough balance;...
+	+ Optinal case: Place rush order; ...
+2. "Pay order" use case: Sub flow
+    * BASIC FLOW:
+	+ Provide payment method (via credit card, ...)
+	+ Provide transaction information
+	+ Confirm payment
+	+ Review purchase history
+    * ALTERNATIVE FLOW:
+	+ Exception: Invalid credit card information; Not enough balance;...
+3. "CURD product" use case:
+    * BASIC FLOW:
+	+ Provide product's information
+	+ Store product's information
+    * ALTERNATIVE FLOW:
+	+ Exception: Invalid product's information
+	+ Optinal case: Update price
