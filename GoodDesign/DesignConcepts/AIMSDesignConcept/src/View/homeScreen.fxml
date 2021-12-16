@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="119.0" prefWidth="1350.0" style="-fx-background-color: #ffefd5;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/Screenshot%20from%202021-10-26%2000-50-46.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="340.0" layoutY="35.0" prefHeight="46.0" prefWidth="475.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <SplitMenuButton layoutX="842.0" layoutY="37.0" mnemonicParsing="false" text="Search">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </SplitMenuButton>
+            <Label layoutX="1132.0" layoutY="28.0" text="0 media" textFill="#009af0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollPane prefHeight="649.0" prefWidth="1360.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="648.0" prefWidth="1355.0">
+                     <children>
+                        <GridPane layoutX="8.0" layoutY="6.0" prefHeight="613.0" prefWidth="1330.0" style="-fx-border-color: fa8072;">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/WarAndPeace.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="206.0" layoutY="18.0" text="Book1">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="188.0" layoutY="54.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="188.0" layoutY="86.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="21.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/LordOfTheRings.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="207.0" layoutY="18.0" text="Book2">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="198.0" layoutY="51.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="198.0" layoutY="84.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="198.0" layoutY="111.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="199.0" layoutY="162.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/TheHobbit.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="211.0" layoutY="18.0" text="Book3">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="192.0" layoutY="55.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="192.0" layoutY="85.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="193.0" layoutY="110.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="194.0" layoutY="162.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/DonQuixote.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="200.0" layoutY="18.0" text="Book4">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="182.0" layoutY="51.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="182.0" layoutY="85.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="182.0" layoutY="111.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="182.0" layoutY="162.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/cd1.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="217.0" layoutY="17.0" text="CD1">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="197.0" layoutY="46.0" prefHeight="15.0" prefWidth="40.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="194.0" layoutY="73.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="194.0" layoutY="102.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="192.0" layoutY="158.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/cd2.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="223.0" layoutY="17.0" text="CD2">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="203.0" layoutY="45.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="203.0" layoutY="78.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="200.0" layoutY="102.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="197.0" layoutY="161.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/cd3.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="219.0" layoutY="17.0" text="CD3">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="199.0" layoutY="52.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="199.0" layoutY="78.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="192.0" layoutY="103.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="193.0" layoutY="157.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="204.0" prefWidth="312.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/cd4.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="216.0" layoutY="17.0" text="CD4">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="195.0" layoutY="54.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="196.0" layoutY="87.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="193.0" layoutY="113.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="194.0" layoutY="157.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/dvd1.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="215.0" layoutY="17.0" text="DVD1">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="192.0" layoutY="47.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="192.0" layoutY="75.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="185.0" layoutY="106.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="192.0" layoutY="161.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/dvd2.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="225.0" layoutY="17.0" text="DVD2">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="201.0" layoutY="46.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="201.0" layoutY="76.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="196.0" layoutY="98.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="197.0" layoutY="161.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/dvd3.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="218.0" layoutY="17.0" text="DVD3">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="203.0" layoutY="50.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="203.0" layoutY="78.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="203.0" layoutY="102.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="207.0" layoutY="160.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/dvd4.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="207.0" layoutY="17.0" text="DVD4">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="185.0" layoutY="53.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="185.0" layoutY="84.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="185.0" layoutY="109.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="186.0" layoutY="156.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="120.0" layoutX="14.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../image/WarAndPeace.jpeg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="206.0" layoutY="18.0" text="Book1">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="188.0" layoutY="54.0" text="Price">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="188.0" layoutY="86.0" text="Avail">
+                                       <font>
+                                          <Font name="System Bold Italic" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner layoutX="188.0" layoutY="112.0" prefHeight="24.0" prefWidth="129.0" />
+                                    <Button layoutX="189.0" layoutY="157.0" mnemonicParsing="false" text="Add to Cart">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
